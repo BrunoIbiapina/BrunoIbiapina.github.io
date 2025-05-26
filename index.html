@@ -39,12 +39,13 @@
   </head>
   <body>
 
-    <!-- TOPO: Data + Clima -->
-<div class="w-full px-6 py-2 bg-zinc-900 text-white flex flex-col sm:flex-row sm:justify-end sm:items-center gap-2 text-sm font-rubik" id="info-topo">
-  <span id="data-atual" class="text-gray-400 flex items-center gap-1"></span>
-  <span id="clima-atual" class="text-gray-300 flex items-center gap-1"></span>
-</div>
+  
 
+<!-- CLIMA E DATA FIXO NO TOPO DIREITO -->
+<div id="top-info-flutuante" class="absolute top-4 right-4 z-50 text-ray-300 text-sm font-rubik flex flex-col items-end">
+  <span id="data-atual" class="text-xs text-gray-300"></span>
+  <span id="clima-atual" class="text-xs text-gray-100"></span>
+</div>
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <nav class="flex items-center justify-between py-8">
         <div class="logo">
@@ -52,6 +53,7 @@
   <li><a href="#home" class="text-sm font-rubik font-normal text-white uppercase">Home</a></li>
   <li><a href="#about" class="text-sm font-rubik font-normal text-white uppercase">Sobre Mim</a></li>
   <li><a href="#work" class="text-sm font-rubik font-normal text-white uppercase">Meu Portfólio</a></li>
+   <li><a href="#noticias-tecnologia" class="text-sm font-rubik font-normal text-white uppercase">Notícias</a></li>
   <li><a href="#contato" class="text-sm font-rubik font-normal text-white uppercase">Contato</a></li>
 </ul>
 
@@ -146,13 +148,6 @@
             Sou Bruno Ibiapina, empreendedor, CEO e fundador do Papalegua — uma startup de entregas.
              Estou estudando Java, React, Tailwind e sou movido por resolver problemas reais com soluções criativas e escaláveis.
           </p>
-          <button
-            class="bg-primary w-48 h-10 rounded-full flex flex-row items-center justify-center mt-12"
-          >
-            <span class="font-bold font-rubik text-xs text-gray-100">
-             Saiba Mais
-            </span>
-          </button>
         </div>
         <div data-aos="fade-left"
         data-aos-duration="1000">
