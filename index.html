@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
 <link rel="icon" type="image/svg+xml" href="/Site-Personalizado/vite.svg" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title> Bruno Ibiapina || Portfólio</title>
@@ -34,10 +36,17 @@
     <meta property="twitter:image" content="/profile.png" />
 
     <!--MENU-->
-    <script type="module" crossorigin src="/Site-Personalizado/assets/index-Brq-snU3.js"></script>
-    <link rel="stylesheet" crossorigin href="/Site-Personalizado/assets/index-DCccOlCE.css">
+    <script type="module" crossorigin src="/Site-Personalizado/assets/index-dtwVk0-X.js"></script>
+    <link rel="stylesheet" crossorigin href="/Site-Personalizado/assets/index-BssAEYGC.css">
   </head>
   <body>
+
+    <!-- TOPO: Data + Clima -->
+<div class="w-full px-6 py-2 bg-zinc-900 text-white flex flex-col sm:flex-row sm:justify-end sm:items-center gap-2 text-sm font-rubik" id="info-topo">
+  <span id="data-atual" class="text-gray-400 flex items-center gap-1"></span>
+  <span id="clima-atual" class="text-gray-300 flex items-center gap-1"></span>
+</div>
+
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <nav class="flex items-center justify-between py-8">
         <div class="logo">
@@ -100,6 +109,26 @@
     Veja meu Portfólio
   </span>
 </a>
+
+<!-- Ícones Sociais -->
+<div class="flex flex-row justify-center gap-6 mt-6 text-white text-2xl">
+  <a href="https://www.instagram.com/brunoibiapina" target="_blank" class="hover:text-primary transition-colors duration-200">
+    <i class="bx bxl-instagram"></i>
+  </a>
+  <a href="https://wa.me/5586999224515" target="_blank" class="hover:text-primary transition-colors duration-200">
+    <i class="bx bxl-whatsapp"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/bruno-ibiapina-b55aa2116/" target="_blank" class="hover:text-primary transition-colors duration-200">
+    <i class="bx bxl-linkedin"></i>
+  </a>
+  <a href="mailto:brunoibiapina@me.com" class="hover:text-primary transition-colors duration-200">
+    <i class="bx bx-envelope"></i>
+  </a>
+  <a href="https://github.com/BrunoIbiapina" target="_blank" class="hover:text-primary transition-colors duration-200">
+    <i class="bx bxl-github"></i>
+  </a>
+</div>
+
 
         </div>
       </section>
@@ -377,11 +406,20 @@
     }
   }
 </style>
-
-
-
   </div>
 </section>
+
+<!-- NOTICIAS -->
+
+<section class="my-20 px-4 flex flex-col items-center">
+  <h2 class="text-3xl font-syne font-bold text-white text-center mb-8">
+    Notícias de Tecnologia (TecMundo)
+  </h2>
+  <div id="noticias-tecnologia" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl w-full"></div>
+
+</section>
+
+<!-- CONTATO -->
 
 <section id="contato" class="my-20 px-4 flex justify-center items-center">
   <div class="w-full max-w-6xl bg-zinc-900 p-10 rounded-lg shadow-lg">
@@ -439,9 +477,6 @@
     </form>
   </div>
 </section>
-
-
-        
       </section>
     </div>
     <footer class="py-8 px-12 bg-zinc-900">
