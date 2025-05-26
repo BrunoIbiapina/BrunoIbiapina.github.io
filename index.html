@@ -422,58 +422,59 @@
       Me mande uma menssagem
     </h2>
     
-    <form action="https://formsubmit.co/brunoibiapina8@gmail.com" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <form action="https://formspree.io/f/xkgrlqwn" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="https://brunoibiapina.me/obrigado.html">
+  <!-- Redireciona para página de obrigado -->
+  <input type="hidden" name="_redirect" value="https://brunoibiapina.me/obrigado.html">
 
-      
-      <!-- Nome -->
-      <div class="col-span-1">
-        <label class="block text-white font-rubik text-sm mb-1" for="nome">Nome</label>
-        <input
-          type="text"
-          name="nome"
-          id="nome"
-          required
-          class="w-full px-4 py-2 bg-zinc-800 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
-        />
-      </div>
 
-      <!-- E-mail -->
-      <div class="col-span-1">
-        <label class="block text-white font-rubik text-sm mb-1" for="email">E-mail</label>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          required
-          class="w-full px-4 py-2 bg-zinc-800 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
-        />
-      </div>
+  <!-- Nome -->
+  <div class="col-span-1">
+    <label class="block text-white font-rubik text-sm mb-1" for="nome">Nome</label>
+    <input
+      type="text"
+      name="nome"
+      id="nome"
+      required
+      class="w-full px-4 py-2 bg-zinc-800 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+    />
+  </div>
 
-      <!-- Mensagem (ocupa duas colunas) -->
-      <div class="col-span-1 md:col-span-2">
-        <label class="block text-white font-rubik text-sm mb-1" for="mensagem">Mensagem</label>
-        <textarea
-          name="mensagem"
-          id="mensagem"
-          rows="5"
-          required
-          class="w-full px-4 py-2 bg-zinc-800 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
-        ></textarea>
-      </div>
+  <!-- E-mail -->
+  <div class="col-span-1">
+    <label class="block text-white font-rubik text-sm mb-1" for="email">E-mail</label>
+    <input
+      type="email"
+      name="email"
+      id="email"
+      required
+      class="w-full px-4 py-2 bg-zinc-800 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+    />
+  </div>
 
-      <!-- Botão (ocupa duas colunas e centraliza) -->
-      <div class="col-span-1 md:col-span-2 flex justify-center">
-        <button
-          type="submit"
-          class="w-48 h-10 bg-primary hover:bg-opacity-80 rounded-full text-white font-bold font-rubik transition duration-300"
-        >
-          Enviar Mensagem
-        </button>
-      </div>
-    </form>
+  <!-- Mensagem -->
+  <div class="col-span-1 md:col-span-2">
+    <label class="block text-white font-rubik text-sm mb-1" for="mensagem">Mensagem</label>
+    <textarea
+      name="mensagem"
+      id="mensagem"
+      rows="5"
+      required
+      class="w-full px-4 py-2 bg-zinc-800 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+    ></textarea>
+  </div>
+
+  <!-- Botão -->
+  <div class="col-span-1 md:col-span-2 flex justify-center">
+    <button
+      type="submit"
+      class="w-48 h-10 bg-primary hover:bg-opacity-80 rounded-full text-white font-bold font-rubik transition duration-300"
+    >
+      Enviar Mensagem
+    </button>
+  </div>
+</form>
+
   </div>
 </section>
       </section>
