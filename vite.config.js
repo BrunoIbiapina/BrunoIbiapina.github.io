@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/Site-Personalizado/',
+  base: '/',
   build: {
     target: 'es2018',
     outDir: 'dist',
