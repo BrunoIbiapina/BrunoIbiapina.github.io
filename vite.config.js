@@ -1,9 +1,16 @@
 import { defineConfig } from 'vite';
+import { viteStaticCopy } from 'vite-plugin-static-copy';
 
 export default defineConfig({
   base: '/',
-  build: {
-    target: 'es2018',
-    outDir: 'dist',
-  },
+  plugins: [
+    viteStaticCopy({
+      targets: [
+        {
+          src: 'public/obrigado.html',
+          dest: '', // root da pasta dist
+        },
+      ],
+    }),
+  ],
 });
